@@ -74,7 +74,7 @@ body {
     margin-right: 30px;
 }
 
-.header__item__list {
+.header__sublist {
     display: flex;
     flex-wrap: wrap;
 }
@@ -98,7 +98,7 @@ a {
     opacity: .75;
 }
 
-.header__list-mobile{
+.header__list-mobile {
     display: none;
     justify-content: space-between;
 }
@@ -124,6 +124,8 @@ a {
 
 .intro {
     background-color: #fff;
+    position: relative;
+    overflow: hidden;
 }
 
 .intro__form {
@@ -138,7 +140,7 @@ a {
     box-sizing: border-box;
     border-radius: 6px;
     height: 48px;
-    max-width: 445px;
+    width: 445px;
     display: block;
     font-size: 20px;
     line-height: 30px;
@@ -220,8 +222,7 @@ h1 {
     float: right;
     position: absolute;
     left: 51.4%;
-    top: 172px;
-    z-index: 1;
+    top: 84px;
     object-fit: cover;
     object-position: top left;
 }
@@ -236,11 +237,7 @@ h1 {
     background-color: #fff;
     position: relative;
     z-index: 2;
-}
-
-.content__wrapper {
     margin: 0 auto;
-
 }
 
 .content__content {
@@ -266,25 +263,28 @@ h1 {
 
 /*Features styles start*/
 
-.features__wrapper {
+.features {
     max-width: 1108px;
     height: 620px;
     margin: 0 auto;
     padding: 110px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .features__box {
     display: inline-block;
-    max-width: 550px;
-    margin: 0 auto;
-    vertical-align: top;
+    width: auto;
+    vertical-align: center;
+    
 }
 
 .features__item {
     margin-top: 30px;
+    max-width: 410px;
 }
 
-.feature__item__image {
+.feature__list-image {
     padding-top: 0px;
     height: 32px;
     width: 32px;
@@ -292,7 +292,7 @@ h1 {
     position: inherit;
 }
 
-.features__item__header {
+.features__header {
     font-family: Inter600;
     font-style: normal;
     font-size: 24px;
@@ -304,7 +304,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.features__item__text {
+.features__text {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -312,25 +312,26 @@ h1 {
     line-height: 22px;
     letter-spacing: -0.2px;
     color: #545454;
-    max-width: 445px;
     margin-bottom: 10px;
 }
 
 .features__image {
     max-height: 400px;
-    max-width: 635px;
+    max-width: 100%;
 }
 
 /*Features styles end*/
 
 /*Statistic styles start*/
 
-.statistic__wrapper {
+.statistic {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
     margin-top: 110px;
     margin-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .statistic__chart {
@@ -345,9 +346,9 @@ h1 {
     vertical-align: top;
 }
 
-.statistic__box__box {
+.statistic__item {
     display: inline-block;
-    margin: 30px 30px 10px 0;
+    margin: 30px 40px 10px 15px;
 }
 
 .statistic__color {
@@ -477,15 +478,15 @@ h1 {
 
 /*Review styles start*/
 
-.review__wrapper {
+.review {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 124px;
     margin-bottom: 115px;
 }
 
 .review__quotes {
-    padding-top: 124px;
     size: 48px;
     margin: 0 auto;
 }
@@ -555,14 +556,15 @@ h1 {
     color: #24AFB5;
 }
 
-.review__switching-dots{
+.review__switching-dots {
     display: none;
 }
 
 /*Review styles end*/
 
 /*Buy styles start*/
-.buy__wrapper {
+
+.buy {
     margin: 100px auto;
     text-align: center;
 }
@@ -578,11 +580,12 @@ h1 {
     text-align: center;
 }
 
-.buy .buy__item-popular {
+.buy__item-popular {
     position: relative;
     display: inline-block;
     height: 450px;
     max-width: 350px;
+    margin: 0px 15px;
     border: 1px solid #24AFB5;
     box-sizing: border-box;
     border-radius: 8px;
@@ -718,7 +721,7 @@ h1 {
 
 /*Subscribe styles Start*/
 
-.subscribe__wrapper {
+.subscribe {
     max-width: 1100px;
     margin: 100px auto;
     display: flex;
@@ -765,7 +768,7 @@ h1 {
     box-sizing: border-box;
     border-radius: 6px;
     height: 48px;
-    max-width: 393px;
+    width: 393px;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px;
@@ -796,7 +799,7 @@ h1 {
 
 /*Footer styles start*/
 
-.footer__wrapper {
+.footer {
     max-width: 1100px;
     margin: 60px auto;
     text-align: center;
@@ -841,7 +844,7 @@ h1 {
     text-align: right;
 }
 
-.footer__copyright, .footer__copyright-mobile{
+.footer__copyright, .footer__copyright-mobile {
     margin-top: 15px;
     font-family: Inter;
     font-style: normal;
@@ -853,13 +856,16 @@ h1 {
     color: #969696;
 }
 
-.footer__sides-mobile{
+.footer__sides-mobile {
     display: none;
 }
-.footer__list-links-separation-mobile{
+
+.footer__list-links-separation-mobile {
     display: none;
 }
-.footer__copyright-mobile{
+
+.footer__copyright-mobile {
     display: none;
 }
+
 /*Footer styles end*/

@@ -1,30 +1,35 @@
 @media only screen and (max-width: 1100px) {
-    
+
 
     /*Header styles start*/
 
-    .header__list{
+    .header__list {
         display: none;
     }
-    .header{
+
+    .header {
         vertical-align: baseline;
         height: 68px;
     }
-    .header__wrapper{
+
+    .header__wrapper {
         vertical-align: baseline;
         margin: 0 15px auto;
         width: 100%;
     }
-    .header__list-mobile{
+
+    .header__list-mobile {
         display: flex;
         justify-content: space-between;
     }
-    .header__sides-img-mobile{
+
+    .header__sides-img-mobile {
         height: 24px;
         width: 24px;
         margin: 22px 0;
     }
-    .header__logo-img-mobile{
+
+    .header__logo-img-mobile {
         width: 38px;
         height: 38px;
         margin: 15px;
@@ -34,7 +39,7 @@
 
     /*Intro styles start*/
 
-    .intro__wrapper{
+    .intro__wrapper {
         background: white;
         height: auto;
         margin: 30px 15px 45px 15px;
@@ -44,7 +49,7 @@
         width: calc(-15px + 100%);
         height: 600px;
         float: left;
-        position:relative;
+        position: relative;
         left: 15px;
         top: 0px;
         margin-top: 40px;
@@ -54,19 +59,20 @@
         object-position: top left;
     }
 
-    .intro__form{
+    .intro__form {
         overflow: hidden;
     }
-    .intro__form-input{
+
+    .intro__form-input {
         width: 100%;
     }
-    
+
     /*Intro styles end*/
 
 
     /*Content styles start*/
 
-    .content__wrapper {
+    .content {
         margin: 0 15px;
     }
 
@@ -74,41 +80,60 @@
         margin-top: 40px;
     }
 
-    .content__content{
+    .content__content {
         margin-bottom: 44px;
     }
-    
+
     /*Content styles end*/
 
     /*Features styles start*/
-    
-    .features__wrapper {
-        margin: 0 15px;
+
+    .features {
+        margin: 0px 15px;
         height: auto;
         padding-top: 10px;
         padding-bottom: 40px;
+        display: block;
+    }
+    .features__item{
+        margin: 30px auto;
     }
     
+
+    .features__text{
+        margin: 0;
+    }
+
     .features__box {
         display: block;
-        max-width: 550px;
+        width: auto;
         margin: 0 auto;
+        align-items: center;
     }
 
     .features__image {
         width: 100%;
         display: block;
     }
-    
+
 
     /*Features styles end*/
 
     /*Statistic styles start*/
 
-    .statistic__wrapper {
+    .statistic {
         margin: 40px 15px;
+        display: block;
     }
-
+    .statistic__item{
+        margin: 15px;
+    }
+    .statistic__box{
+        margin-top: 30px;
+    }
+    .statistic__text{
+        margin-top: 0;
+    }
     /*Statistic styles end*/
 
     /*Devices styles start*/
@@ -119,13 +144,14 @@
         text-align: center;
     }
 
-    .devices__items{
+    .devices__items {
         margin: 15px 30px;
     }
 
     .devices__shortheading {
         margin-top: 40px;
     }
+
     .devices__safari {
         margin-top: 60px;
         width: 100%;
@@ -134,80 +160,83 @@
         object-fit: cover;
         object-position: top;
     }
+
     /*Devices styles end*/
-    
+
     /*Review styles start*/
-    
-    .review__wrapper {
+
+    .review {
         max-width: 1100px;
         margin: 0 15px auto;
         text-align: center;
         margin-bottom: 57px;
     }
 
-    .review__button-left, .review__button-right{
+    .review__button-left, .review__button-right {
         display: none;
     }
-        
+
     .review__quotes {
         padding-top: 40px;
         size: 48px;
         margin: 0 auto;
     }
-    
+
     .review__text {
         margin-top: 10px;
     }
 
-    .review__switching-dots{
+    .review__switching-dots {
         display: block;
         margin-top: 48px;
     }
+
     /*Review styles end*/
 
     /*Buy styles start*/
 
-    .buy__wrapper {
-        margin: 40px 15px auto;
+    .buy {
+        margin: 40px 0px auto;
         margin-bottom: 40px;
         text-align: center;
     }
 
     .buy__item {
-        margin: 10px 0;
+        margin: 10px 15px;
     }
 
     /*Buy styles end*/
 
     /*Buy styles end*/
 
-    .subscribe__wrapper {
+    .subscribe {
         display: block;
         margin: 40px 15px 0px 15px;
     }
-    
-    .subscribe__email{
+
+    .subscribe__email {
         margin-top: 20px;
         width: 100%;
     }
 
     /*Buy styles end*/
-    
+
     /*Footer styles start*/
 
-    .footer__wrapper{
+    .footer {
         margin-bottom: 50px;
     }
 
     .footer__first-line {
         display: block;
-        justify-content:right;
+        justify-content: right;
         text-align: center;
     }
-    
+
     .footer__list-links {
         width: 285px;
     }
+
     .footer__sides-left {
         width: 100%;
         text-align: center;
@@ -218,20 +247,20 @@
         display: none;
     }
 
-    .footer__sides-mobile{
+    .footer__sides-mobile {
         display: block;
     }
 
-    .footer__list-links-separation-mobile{
+    .footer__list-links-separation-mobile {
         display: block;
         white-space: pre-wrap;
     }
-    
-    .footer__copyright{
+
+    .footer__copyright {
         display: none;
     }
 
-    .footer__copyright-mobile{
+    .footer__copyright-mobile {
         display: block;
         margin: 30px 0;
     }
