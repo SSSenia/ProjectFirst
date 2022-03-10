@@ -229,7 +229,6 @@ h1 {
 
 /*Intro styles end*/
 
-
 /*Content styles start*/
 
 .content {
@@ -238,12 +237,13 @@ h1 {
     position: relative;
     z-index: 2;
     margin: 0 auto;
+    margin-bottom: 104px;
+    margin-top: 110px;
 }
 
 .content__content {
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 104px;
     max-width: 730px;
     font-family: Inter;
     font-style: normal;
@@ -253,10 +253,6 @@ h1 {
     text-align: center;
     letter-spacing: -0.3px;
     text-align: center;
-}
-
-.content__graphics {
-    margin-top: 110px;
 }
 
 /*Content styles end*/
@@ -276,7 +272,7 @@ h1 {
     display: inline-block;
     width: auto;
     vertical-align: center;
-    
+
 }
 
 .features__item {
@@ -486,6 +482,13 @@ h1 {
     margin-bottom: 115px;
 }
 
+.review__wrapper {
+    max-width: 1026px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
 .review__quotes {
     size: 48px;
     margin: 0 auto;
@@ -503,16 +506,6 @@ h1 {
     text-align: center;
     letter-spacing: -0.3px;
     color: #585757;
-}
-
-.review__button-left {
-    vertical-align: 60%;
-    margin-right: 50px;
-}
-
-.review__button-right {
-    vertical-align: 60%;
-    margin-left: 50px;
 }
 
 .review__img-google {
@@ -557,7 +550,70 @@ h1 {
 }
 
 .review__switching-dots {
-    display: none;
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    width: 56px;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.review__gray-dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 3px;
+    background: #DBDBDB;
+    border-radius: 50%;
+}
+
+.review__blue-dot {
+    display: block;
+    position: absolute;
+    left: 3px;
+    height: 8px;
+    width: 8px;
+    background: #24AFB5;
+    border-radius: 50%;
+    transition: 1.2s ease;
+}
+
+.review__Arrow {
+    vertical-align: middle;
+    height: 22px;
+    width: 22px;
+}
+
+.review__button {
+    margin: auto 50px;
+    margin-top: 42px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 2px 1px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.04);
+    transition-duration: 0.25s;
+}
+
+.review__button:hover {
+    background: #ebebeb;
+}
+
+.review__button:disabled {
+    background: #ebebeb;
+}
+
+.review__slider {
+    justify-content: unset;
+    overflow: hidden;
+}
+
+.review__track {
+    min-width: 100%;
+    max-width: 730px;
+    display: flex;
+    transition: 1.2s ease;
 }
 
 /*Review styles end*/

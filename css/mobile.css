@@ -73,15 +73,7 @@
     /*Content styles start*/
 
     .content {
-        margin: 0 15px;
-    }
-
-    .content__graphics {
-        margin-top: 40px;
-    }
-
-    .content__content {
-        margin-bottom: 44px;
+        margin: 40px 15px 44px 15px;
     }
 
     /*Content styles end*/
@@ -95,12 +87,13 @@
         padding-bottom: 40px;
         display: block;
     }
-    .features__item{
+
+    .features__item {
         margin: 30px auto;
     }
-    
 
-    .features__text{
+
+    .features__text {
         margin: 0;
     }
 
@@ -125,15 +118,19 @@
         margin: 40px 15px;
         display: block;
     }
-    .statistic__item{
+
+    .statistic__item {
         margin: 15px;
     }
-    .statistic__box{
+
+    .statistic__box {
         margin-top: 30px;
     }
-    .statistic__text{
+
+    .statistic__text {
         margin-top: 0;
     }
+
     /*Statistic styles end*/
 
     /*Devices styles start*/
@@ -170,25 +167,24 @@
         margin: 0 15px auto;
         text-align: center;
         margin-bottom: 57px;
+        padding-top: 40px;
     }
 
-    .review__button-left, .review__button-right {
+    .review__wrapper {
+        justify-content: center;
+    }
+
+    .review__button {
         display: none;
     }
 
     .review__quotes {
-        padding-top: 40px;
         size: 48px;
         margin: 0 auto;
     }
 
     .review__text {
         margin-top: 10px;
-    }
-
-    .review__switching-dots {
-        display: block;
-        margin-top: 48px;
     }
 
     /*Review styles end*/
