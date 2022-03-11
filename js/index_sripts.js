@@ -11,10 +11,10 @@ const
 
 let
     position = 0,
-    first = true,
-    posX1 = 0,
     shift = 0,
-    itemWidth = slider.clientWidth;
+    itemWidth = slider.clientWidth,
+    startTouch = undefined,
+    lastTouch = undefined;
 
 let
     getEvent = function () {
@@ -26,9 +26,9 @@ const
         track.style.transform = `translateX(${position}px)`;
         dot.style.transform = `translateX(${Math.abs((position / itemWidth * 14))}px)`;
     },
-    setPosition_touch = () => {
-        track.style.transform = `translateX(${position - shift / 10}px)`;
-        dot.style.transform = `translateX(${Math.abs(((position - shift / 10) / itemWidth * 14))}px)`;
+    setPositionByTouch = () => {
+        track.style.transform = `translateX(${shift}px)`;
+        dot.style.transform = `translateX(${(-shift / itemWidth * 14)}px)`;
     },
     checkBtns = () => {
         btnLeft.disabled = position == 0;
@@ -38,6 +38,11 @@ const
         items.forEach((item) => {
             item.style.minWidth = `${itemWidth}px`;
         });
+    },
+    swap = (side) => {
+        position += itemWidth * side;
+        setPosition();
+        checkBtns();
     };
 
 setSize();
@@ -48,56 +53,47 @@ window.addEventListener('resize', () => {
     position = 0;
     setPosition();
     setSize();
+    track.style.transition = "1.2s ease";
+    dot.style.transition = "1.2s ease";
 });
 
 btnLeft.addEventListener('click', () => {
-    position += itemWidth;
-    setPosition();
-    checkBtns();
+    swap(1);
 });
-
 
 btnRight.addEventListener('click', () => {
-    position -= itemWidth;
-    setPosition();
-    checkBtns();
+    swap(-1);
 });
 
-track.addEventListener('mouse', () => {
-    position -= itemWidth;
-    setPosition();
-    checkBtns();
+track.addEventListener('touchstart', () => {
+    let evt = getEvent();
+    startTouch = evt.clientX;
+
+    dot.style.transition = "none";
+    track.style.transition = "none";
 });
 
 track.addEventListener('touchmove', () => {
     let evt = getEvent();
-    if (first) {
-        posX1 = evt.clientX;
-        first = false;
-    }
-    else {
-        shift += posX1 - evt.clientX;
-    }
-    setPosition_touch();
+    lastTouch = evt.clientX;
+
+    shift = position - (startTouch - lastTouch);
+    setPositionByTouch();
 });
 
 track.addEventListener('touchend', () => {
-
-    if ((position + (shift / 10)) < position) {
-        position += itemWidth;
+    dot.style.transition = "0.5s";
+    track.style.transition = "0.5s";
+    
+    if (Math.abs(startTouch - lastTouch) >= 100) {
+        if (lastTouch > startTouch && (position != 0)) {
+            swap(1);
+        }
+        else if (lastTouch < startTouch && position > -((itemsCount - 1) * itemWidth)) {
+            swap(-1);
+        }
     }
-    else {
-        position -= itemWidth;
-    }
-
-    shift = 0;
-    first = true;
-
-    if (position > 0) position = 0;
-    if (position <= -(itemWidth * (itemsCount - 1))) position = -(itemWidth * (itemsCount - 1));
-
     setPosition();
-    checkBtns();
 });
 
 // review__slider end
