@@ -11,6 +11,35 @@
 </head>
 
 <body>
+    <div class="popup" id="popup">
+        <ul class="popup__list">
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">First Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Second Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Third Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Fourth Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Fifth Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Sixth Link</li>
+            </a>
+            <div class="separation" id="popup__last"></div>
+        </ul>
+    </div>
     <header class="header">
         <div class="header__wrapper">
             <nav class="header__nav">
@@ -39,19 +68,21 @@
                 </ul>
                 <ul class="header__list-mobile">
                     <li class="header__item-mobile">
-                        <a href="/" class="header__link-mobile">
-                            <img class="header__sides-img-mobile" src="./img/svg/hamburger.svg" alt="Hamburger">
-                        </a>
+                        <button class="header__side" id="hamburger">
+                            <div class="hamburger__line"></div>
+                            <div class="hamburger__line"></div>
+                            <div class="hamburger__line"></div>
+                        </button>
                     </li>
                     <li class="header__item-mobile">
                         <a href="/" class="header__link-mobile">
                             <img class="header__logo-img-mobile" src="./img/svg/Logo.svg" alt="Logo">
                         </a>
                     </li>
-                    <li class="header__item-mobile">
-                        <a href="/" class="header__link-mobile">
+                    <li class="header__list-mobile">
+                        <button class="header__side">
                             <img class="header__sides-img-mobile" src="./img/svg/Search.svg" alt="Search">
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </nav>

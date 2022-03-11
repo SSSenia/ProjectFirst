@@ -1,3 +1,18 @@
+//popup start
+
+const
+    popup = document.querySelector('#popup'),
+    hamburger = document.querySelector('#hamburger');
+
+hamburger.addEventListener('click', (e) => {
+    e.preventDefault();
+    popup.classList.toggle("open");
+    hamburger.classList.toggle("active");
+
+});
+
+//popup end
+
 // review__slider start
 
 const
@@ -84,7 +99,7 @@ track.addEventListener('touchmove', () => {
 track.addEventListener('touchend', () => {
     dot.style.transition = "0.5s";
     track.style.transition = "0.5s";
-    
+
     if (Math.abs(startTouch - lastTouch) >= 100) {
         if (lastTouch > startTouch && (position != 0)) {
             swap(1);

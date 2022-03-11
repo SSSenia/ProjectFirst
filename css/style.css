@@ -38,13 +38,19 @@ html {
     background: #DBDBDB;
 }
 
-/*Header styles start*/
+
+.popup {
+    display: none;
+}
 
 body {
     font-family: Inter600;
     font-style: normal;
     font-size: 15px;
 }
+
+/*Header styles start*/
+
 
 .header__wrapper {
     max-width: 1108px;
