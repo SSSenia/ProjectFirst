@@ -11,6 +11,35 @@
 </head>
 
 <body>
+    <div class="popup" id="popup">
+        <ul class="popup__list">
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">First Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Second Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Third Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Fourth Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Fifth Link</li>
+            </a>
+            <div class="separation"></div>
+            <a href="/" class="popup__link">
+                <li class="popup__item">Sixth Link</li>
+            </a>
+            <div class="separation" id="popup__last"></div>
+        </ul>
+    </div>
     <header class="header">
         <div class="header__wrapper">
             <nav class="header__nav">
@@ -39,19 +68,21 @@
                 </ul>
                 <ul class="header__list-mobile">
                     <li class="header__item-mobile">
-                        <a href="/" class="header__link-mobile">
-                            <img class="header__sides-img-mobile" src="./img/svg/hamburger.svg" alt="Hamburger">
-                        </a>
+                        <button class="header__side" id="hamburger">
+                            <div class="hamburger__line"></div>
+                            <div class="hamburger__line"></div>
+                            <div class="hamburger__line"></div>
+                        </button>
                     </li>
                     <li class="header__item-mobile">
                         <a href="/" class="header__link-mobile">
                             <img class="header__logo-img-mobile" src="./img/svg/Logo.svg" alt="Logo">
                         </a>
                     </li>
-                    <li class="header__item-mobile">
-                        <a href="/" class="header__link-mobile">
+                    <li class="header__list-mobile">
+                        <button class="header__side">
                             <img class="header__sides-img-mobile" src="./img/svg/Search.svg" alt="Search">
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -83,32 +114,32 @@
         </section>
         <div class="separation"></div>
         <section class="features">
-                <ul class="features__box">
-                    <li class="features__item">
-                        <img src="./img/svg/Graphics list.svg" alt="Graphicslist1" class="feature__list-image">
-                        <h2 class="features__header">One line header</h2>
-                        <p class="features__text">Computers are infected with Adware and spyware. Such
-                            software is
-                            rarely accompanied by uninstall utility.</p>
-                    </li>
-                    <li class="features__item">
-                        <img src="./img/svg/Graphics list.svg" alt="Graphicslist2" class="feature__list-image">
-                        <h2 class="features__header">One line header</h2>
-                        <p class="features__text">Computers are infected with Adware and spyware. Such
-                            software is
-                            rarely accompanied by uninstall utility.</p>
+            <ul class="features__box">
+                <li class="features__item">
+                    <img src="./img/svg/Graphics list.svg" alt="Graphicslist1" class="feature__list-image">
+                    <h2 class="features__header">One line header</h2>
+                    <p class="features__text">Computers are infected with Adware and spyware. Such
+                        software is
+                        rarely accompanied by uninstall utility.</p>
+                </li>
+                <li class="features__item">
+                    <img src="./img/svg/Graphics list.svg" alt="Graphicslist2" class="feature__list-image">
+                    <h2 class="features__header">One line header</h2>
+                    <p class="features__text">Computers are infected with Adware and spyware. Such
+                        software is
+                        rarely accompanied by uninstall utility.</p>
 
-                    </li>
-                    <li class="features__item">
-                        <img src="./img/svg/Graphics list.svg" alt="Graphicslist3" class="feature__list-image">
-                        <h2 class="features__header">One line header</h2>
-                        <p class="features__text">Computers are infected with Adware and spyware. Such
-                            software is
-                            rarely accompanied by uninstall utility.</p>
-                    </li>
-                </ul>
-                <img src="./img/svg/imageFeathures.svg" alt="imageFeathures" class="features__image">
-            
+                </li>
+                <li class="features__item">
+                    <img src="./img/svg/Graphics list.svg" alt="Graphicslist3" class="feature__list-image">
+                    <h2 class="features__header">One line header</h2>
+                    <p class="features__text">Computers are infected with Adware and spyware. Such
+                        software is
+                        rarely accompanied by uninstall utility.</p>
+                </li>
+            </ul>
+            <img src="./img/svg/imageFeathures.svg" alt="imageFeathures" class="features__image">
+
         </section>
         <div class="separation"></div>
         <section class="statistic">
@@ -180,23 +211,79 @@
         <div class="separation"></div>
         <section class="review">
             <img src="./img/svg/quotes.svg" alt="quates" class="review__quotes">
-            <div class="review__selector">
-                <a href="/" class="">
-                    <img src="./img/svg/ButtonLeft.svg" alt="ButtonLeft" class="review__button-left"></a>
-                <div class="review__text">There is a lot of exciting stuff going on in the stars above us that make
-                    astronomy so much fun. The truth is the universe is a constantly changing, moving, some would
-                    say “living” thing because you just never know what you are going to see on any given night of
-                    stargazing.</div>
-                <a href="/" class="">
-                    <img src="./img/svg/ButtonRight.svg" alt="ButtonRight" class="review__button-right"></a>
+            <div class="review__wrapper">
+                <button class="review__button" id="btn-left"><img src="./img/svg/ButtonLeft.svg" alt="ButtonLeft"
+                        class="review__Arrow"></button>
+                <div class="review__slider">
+                    <div class="review__track">
+                        <div class="review__item">
+                            <div class="review__text">There is a lot of exciting stuff going on in the stars above us
+                                that
+                                make astronomy so much fun. The truth is the universe is a constantly changing, moving,
+                                some
+                                would say “living” thing because you just never know what you are going to see on any
+                                given
+                                night of stargazing.</div>
+                            <br>
+                            <img src="./img/svg/Google.svg" alt="Google" class="review__img-google">
+                            <div class="review__name">Charlie Mendoza</div>
+                            <div class="review__position">Product Designer</div>
+                            <a href="/" class="review__learn-more">Learn more</a>
+                        </div>
+                        <div class="review__item">
+                            <div class="review__text">There is a lot of exciting stuff going on in the stars above us
+                                that
+                                make astronomy so much fun. The truth is the universe is a constantly changing, moving,
+                                some
+                                would say “living” thing because you just never know what you are going to see on any
+                                given
+                                night of stargazing.</div>
+                            <br>
+                            <img src="./img/svg/Google.svg" alt="Google" class="review__img-google">
+                            <div class="review__name">Charlie Mendoza</div>
+                            <div class="review__position">Product Designer</div>
+                            <a href="/" class="review__learn-more">Learn more</a>
+                        </div>
+                        <div class="review__item">
+                            <div class="review__text">There is a lot of exciting stuff going on in the stars above us
+                                that
+                                make astronomy so much fun. The truth is the universe is a constantly changing, moving,
+                                some
+                                would say “living” thing because you just never know what you are going to see on any
+                                given
+                                night of stargazing.</div>
+                            <br>
+                            <img src="./img/svg/Google.svg" alt="Google" class="review__img-google">
+                            <div class="review__name">Charlie Mendoza</div>
+                            <div class="review__position">Product Designer</div>
+                            <a href="/" class="review__learn-more">Learn more</a>
+                        </div>
+                        <div class="review__item">
+                            <div class="review__text">There is a lot of exciting stuff going on in the stars above us
+                                that
+                                make astronomy so much fun. The truth is the universe is a constantly changing, moving,
+                                some
+                                would say “living” thing because you just never know what you are going to see on any
+                                given
+                                night of stargazing.</div>
+                            <br>
+                            <img src="./img/svg/Google.svg" alt="Google" class="review__img-google">
+                            <div class="review__name">Charlie Mendoza</div>
+                            <div class="review__position">Product Designer</div>
+                            <a href="/" class="review__learn-more">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="review__button" id="btn-right"><img src="./img/svg/ButtonRight.svg" alt="ButtonRight"
+                        class="review__Arrow"></button>
             </div>
-            <img src="./img/svg/Google.svg" alt="Google" class="review__img-google">
-            <div class="review__name">Charlie Mendoza</div>
-            <div class="review__position">Product Designer</div>
-            <a href="/" class="review__learn-more">Learn more</a>
-            <div class="review__switching-dots">
-                <img src="./img/svg/Dots.svg" alt="Dots" class="review__switching-dots-img">
-            </div>
+            <ul class="review__switching-dots">
+                <li class="review__blue-dot"></li>
+                <li class="review__gray-dot"></li>
+                <li class="review__gray-dot"></li>
+                <li class="review__gray-dot"></li>
+                <li class="review__gray-dot"></li>
+            </ul>
         </section>
         <div class="separation"></div>
         <section class="buy">
@@ -298,6 +385,7 @@
             </ul>
         </div>
     </footer>
+    <script src="/js/index_sripts.js"></script>
 </body>
 
 </html>
