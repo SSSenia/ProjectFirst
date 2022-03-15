@@ -67,6 +67,7 @@ window.addEventListener('resize', () => {
     itemWidth = slider.clientWidth;
     position = 0;
     setPosition();
+    checkBtns();
     setSize();
     track.style.transition = "1.2s ease";
     dot.style.transition = "1.2s ease";

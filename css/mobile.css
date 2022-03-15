@@ -86,7 +86,6 @@
 
     .header__side.active .hamburger__line {
         transition: top 0.15s ease .05s, transform .15s ease-out .25s, opacity 0s ease .25s;
-
     }
 
     .hamburger__line:nth-child(1) {
@@ -308,6 +307,11 @@
     .subscribe__email {
         margin-top: 20px;
         width: 100%;
+        margin-bottom: 10px;
+    }
+    .subscribe__button{
+        margin-bottom: 46px;
+        margin-left: 0px;
     }
 
     /*Buy styles end*/
