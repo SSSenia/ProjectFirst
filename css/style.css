@@ -820,6 +820,7 @@ h1 {
 .subscribe__form {
     display: inline-block;
     text-align: left;
+    margin: auto 0;
 }
 
 .subscribe__email {
@@ -832,7 +833,6 @@ h1 {
     width: 393px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 10px;
     padding: 9px;
     padding-left: 15px;
     letter-spacing: -0.3px;
@@ -848,8 +848,8 @@ h1 {
     border-radius: 6px;
     font-size: 20px;
     line-height: 26px;
+    margin-left: 18px;
     color: #fff;
-    margin-bottom: 46px;
 }
 
 .subscribe__button:hover {
